@@ -1,0 +1,74 @@
+
+///////////////////////////
+/// COLORS
+///////////////////////////
+
+$colorGame: darkslateblue;
+$backgroundColor: #fff;
+$borderColor: #999;
+$activeSquad: red;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
+  
+  header h1{
+    display: flex;
+    justify-content: center;
+    background-color: $colorGame;
+  }
+  
+  .resultBar h1{
+    display: flex;
+    justify-content: center;
+    background-color: $colorGame;
+  }
+  
+  .square {
+    background: $backgroundColor;
+    border: 1px solid $borderColor;
+    float: left;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 100px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+
+    &:focus {
+        outline: none;
+    }
+  }
+  
+  .active-square{
+    background-color: $activeSquad !important;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .board-row-action-button{
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
